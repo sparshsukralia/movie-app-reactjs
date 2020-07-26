@@ -6,11 +6,13 @@
 
 body {
   font-family: "montserrat", sans-serif;
-  background-color: rgb(28, 26, 44);
+  background-color: rgb(21, 20, 39);
 }
 
 header {
-  padding: 3rem 3rem 3rem 0.5rem;
+  width: 100%;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
 }
 
 header h1 {
