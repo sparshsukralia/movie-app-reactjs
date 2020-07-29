@@ -62,3 +62,22 @@ main {
   background: #fff;
   color: #223343;
 }
+
+.detail {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #445565;
+  overflow-y: scroll;
+}
+
+.detail .content {
+  display: block;
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 25px;
+  color: #fff;
+}
