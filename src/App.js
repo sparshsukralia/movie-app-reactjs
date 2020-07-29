@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import Search from "./components/Search";
 import Results from "./components/Results";
+import Detail from "./components/Detail";
 import "./App.css";
 
 function App() {
@@ -11,12 +12,14 @@ function App() {
     selected: {},
   });
 
-  const apiurl = "http://www.omdbapi.com/?i=tt3896198&apikey=a2526df0";
+  const apiurl = "http://www.omdbapi.com/?apikey=a2526df0";
 
   const search = (e) => {
     if (e.key === "Enter") {
       axios(apiurl + "&s=" + state.s).then(({ data }) => {
         let results = data.Search;
+
+        console.log(data);
 
         setState((prevState) => {
           return { ...prevState, results: results };
@@ -31,18 +34,41 @@ function App() {
     setState((prevState) => {
       return { ...prevState, s: s };
     });
+  };
 
-    console.log(state.s);
+  const openDetail = (id) => {
+    axios(apiurl + "&i=" + id).then(({ data }) => {
+      let result = data;
+
+      console.log(result);
+
+      setState((prevState) => {
+        return { ...prevState, selected: result };
+      });
+    });
+  };
+
+  const closeDetail = () => {
+    setState((prevState) => {
+      return { ...prevState, selected: {} };
+    });
   };
 
   return (
     <div className="App">
       <header className="App-header">
-        <h1>Movie Database</h1>
+        <h1>Movie DataHouse</h1>
       </header>
       <main>
         <Search searchInput={searchInput} search={search} />
-        <Results results={state.results} />
+
+        <Results results={state.results} openDetail={openDetail} />
+
+        {typeof state.selected.Title != "undefined" ? (
+          <Detail selected={state.selected} closeDetail={closeDetail} />
+        ) : (
+          false
+        )}
       </main>
     </div>
   );

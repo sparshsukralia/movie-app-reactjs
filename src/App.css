@@ -6,7 +6,7 @@
 
 body {
   font-family: "montserrat", sans-serif;
-  background-color: rgb(21, 20, 39);
+  background-color: rgb(31, 31, 31);
 }
 
 header {
@@ -24,7 +24,7 @@ header h1 {
 
 main {
   width: 100%;
-  max-width: 80%;
+  max-width: 60%;
   margin: 0 auto;
 }
 
@@ -80,4 +80,54 @@ main {
   margin: 0 auto;
   padding: 25px;
   color: #fff;
+}
+
+.detail .content h2 {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.detail .content h2 span {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.detail .content .rating {
+  margin-bottom: 30px;
+}
+
+.detail .content .about {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px 30px;
+}
+
+.detail .content .about img {
+  flex: 1 1 50%;
+  max-width: 300px;
+  padding: 0 15px;
+}
+
+.detail .content .about p {
+  flex: 1 1 50%;
+  padding: 15px;
+}
+
+.detail .content .about .close {
+  display: inline-block;
+  padding: 15px 30px;
+  font-size: 18px;
+  font-weight: 700;
+  background: #4484c4;
+  color: #fff;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  appearance: none;
+  cursor: pointer;
+  transition: 0.4s ease-out;
+}
+
+.detail .content .about .close:hover {
+  background: #223343;
 }
