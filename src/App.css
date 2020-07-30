@@ -78,6 +78,15 @@ main {
 
 .detail {
   margin: 3rem 5rem;
+  overflow-y: scroll;
+}
+
+.detail .content .rating {
+  margin-left: 2rem;
+  font-size: 1.5rem;
+  margin-bottom: 0;
+  margin-top: 1rem;
+  padding-bottom: 0;
 }
 
 .detail .content {
@@ -97,6 +106,7 @@ main {
 .detail .content h2 {
   font-size: 3rem;
   padding: 2rem;
+  padding-top: 0;
   padding-bottom: 0.5rem;
   font-weight: 600;
 }
@@ -125,12 +135,12 @@ main {
   opacity: none;
   padding: 0 15px;
   margin-left: 2rem;
-  margin-top: 3rem;
+  margin-top: 1rem;
 }
 
 .detail .content .about p {
   flex: 1 50%;
-  padding: 15px;
+  padding: 15px 25px;
   margin-top: 3rem;
   font-size: 1.5rem;
 }
@@ -143,10 +153,11 @@ main {
   width: 1400px;
   margin-top: 3rem;
   margin-right: 2rem;
+  margin-bottom: 1rem;
   font-weight: 700;
   background: #223343;
   color: #fff;
-  border-radius: 8px;
+  /* border-radius: 8px; */
   border: none;
   outline: none;
   appearance: none;

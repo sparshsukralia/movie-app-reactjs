@@ -6,7 +6,7 @@ function Detail({ selected, closeDetail }) {
       <div className="content">
         <h2>{selected.Title}</h2>
         <span>{selected.Year}</span>
-        {/* <p className="rating">Rating: {selected.imdbRating}</p> */}
+        <p className="rating">Rating: {selected.imdbRating}</p>
         <div className="about">
           <img src={selected.Poster} alt="" />
           <p>{selected.Plot}</p>
