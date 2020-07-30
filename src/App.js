@@ -7,7 +7,7 @@ import "./App.css";
 
 function App() {
   const [state, setState] = useState({
-    s: "",
+    s: "sherlock",
     results: [],
     selected: {},
   });
@@ -57,7 +57,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>Movie DataHouse</h1>
+        <h1>Movie Mania</h1>
       </header>
       <main>
         <Search searchInput={searchInput} search={search} />

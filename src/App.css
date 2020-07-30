@@ -6,7 +6,7 @@
 
 body {
   font-family: "montserrat", sans-serif;
-  background-color: rgb(31, 31, 31);
+  background: linear-gradient(to right, #200122, #6f0000);
 }
 
 header {
@@ -17,8 +17,8 @@ header {
 
 header h1 {
   color: #ffffff;
-  font-size: 3rem;
-  font-weight: 500;
+  font-size: 4rem;
+  font-weight: 700;
   text-align: center;
 }
 
