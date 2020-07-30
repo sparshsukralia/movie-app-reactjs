@@ -24,7 +24,7 @@ header h1 {
 
 main {
   width: 100%;
-  max-width: 80%;
+  max-width: 90%;
   margin: 0 auto;
 }
 
@@ -171,4 +171,10 @@ main {
 
 .detail .content .about .close:hover {
   background: #223343;
+}
+
+@media screen and (max-width: 643px) {
+  .results .result {
+    margin: 15px;
+  }
 }
