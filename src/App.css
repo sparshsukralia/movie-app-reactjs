@@ -37,7 +37,7 @@ main {
 .results .result {
   width: 20%;
   min-width: 250px;
-  border-radius: 8px;
+  background: #000000;
   max-height: 500px;
   /* padding: 15px; */
   margin: 20px 25px;
@@ -49,17 +49,25 @@ main {
 .results .result img {
   /* display: block; */
   width: 100%;
+  padding: 10px 2px;
+  margin: 0 auto;
   height: 350px;
+  width: 230px;
 }
 
 .results .result h3 {
   color: #fff;
   font-size: 20px;
   font-weight: 600;
-  padding: 10px;
-  background: #445565;
-  flex: 1 1 100%;
+  padding: 1rem;
+  background: #272829;
+  flex: 1 100%;
   transition: 0.4s ease-out;
+}
+
+.result:hover {
+  box-shadow: 0 0 8px 3px #eaf0f7;
+  /* background: #dfd8d8; */
 }
 
 .results .result h3:hover {
@@ -69,32 +77,36 @@ main {
 }
 
 .detail {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background-color: #445565;
-  overflow-y: scroll;
+  margin: 3rem 5rem;
 }
 
 .detail .content {
   display: block;
   width: 100%;
-  max-width: 960px;
-  margin: 0 auto;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  max-width: 15000px;
+  /* max-height: 600px; */
   padding: 25px;
+  background: #000000;
   color: #fff;
 }
 
 .detail .content h2 {
-  font-size: 28px;
+  font-size: 3rem;
+  padding: 2rem;
+  padding-bottom: 0.5rem;
   font-weight: 600;
 }
 
-.detail .content h2 span {
-  font-size: 20px;
+.detail .content span {
+  font-size: 1.4rem;
+  margin-left: 2rem;
+  margin-bottom: 3rem;
   font-weight: 300;
+  color: #ffffff;
 }
 
 .detail .content .rating {
@@ -110,20 +122,29 @@ main {
 .detail .content .about img {
   flex: 1 1 50%;
   max-width: 300px;
+  opacity: none;
   padding: 0 15px;
+  margin-left: 2rem;
+  margin-top: 3rem;
 }
 
 .detail .content .about p {
-  flex: 1 1 50%;
+  flex: 1 50%;
   padding: 15px;
+  margin-top: 3rem;
+  font-size: 1.5rem;
 }
 
-.detail .content .about .close {
+.detail .content .close {
   display: inline-block;
+  margin-left: 2rem;
   padding: 15px 30px;
   font-size: 18px;
+  width: 1400px;
+  margin-top: 3rem;
+  margin-right: 2rem;
   font-weight: 700;
-  background: #4484c4;
+  background: #223343;
   color: #fff;
   border-radius: 8px;
   border: none;
@@ -131,6 +152,10 @@ main {
   appearance: none;
   cursor: pointer;
   transition: 0.4s ease-out;
+}
+
+.detail .content button:hover {
+  background: #4484c4;
 }
 
 .detail .content .about .close:hover {
