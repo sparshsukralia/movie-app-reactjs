@@ -197,20 +197,30 @@ main {
   }
 
   .detail .content .close {
-    width: 60%;
+    width: 100%;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
   }
 
   .detail .content span {
     margin-left: 0.5rem;
+    font-style: italic;
+    font-weight: bold;
   }
 
   .detail .content h2 {
     padding-left: 0.5rem;
-    font-size: 2.5rem;
+    font-size: 2.1rem;
+    margin-bottom: 0.5rem;
+    font-weight: 100;
   }
 
   .detail .content .rating {
     margin-left: 0.5rem;
+    font-weight: bold;
   }
 
   .detail .content .about img {
