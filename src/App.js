@@ -19,6 +19,8 @@ function App() {
       axios(apiurl + "&s=" + state.s).then(({ data }) => {
         let results = data.Search;
 
+        console.log(results);
+
         setState((prevState) => {
           return { ...prevState, results: results };
         });

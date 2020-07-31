@@ -48,6 +48,19 @@ main {
   cursor: pointer;
 }
 
+.results .not-found {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 2rem 0.5rem;
+}
+
+.results .not-found h2 {
+  color: #ffffff;
+}
+
 .results .result img {
   /* display: block; */
   width: 100%;
