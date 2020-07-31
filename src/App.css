@@ -31,6 +31,8 @@ main {
 .results {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   /* margin: 0 -15px; */
 }
 
@@ -174,9 +176,35 @@ main {
   background: #223343;
 }
 
+@media screen and (max-width: 1015px) {
+  .results {
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 683px) {
+  .results {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .results .result {
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
 @media screen and (max-width: 643px) {
   .results .result {
     margin: 15px;
+  }
+}
+
+@media screen and (max-width: 638px) {
+  .results .result {
+    margin: 8px;
   }
 }
 
