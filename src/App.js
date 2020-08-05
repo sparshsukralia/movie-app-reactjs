@@ -14,6 +14,14 @@ function App() {
 
   const apiurl = "https://www.omdbapi.com/?apikey=a2526df0";
 
+  const searchInput = (e) => {
+    let s = e.target.value;
+
+    setState((prevState) => {
+      return { ...prevState, s: s };
+    });
+  };
+
   const search = (e) => {
     if (e.key === "Enter") {
       axios(apiurl + "&s=" + state.s).then(({ data }) => {
@@ -26,14 +34,6 @@ function App() {
         });
       });
     }
-  };
-
-  const searchInput = (e) => {
-    let s = e.target.value;
-
-    setState((prevState) => {
-      return { ...prevState, s: s };
-    });
   };
 
   const openDetail = (id) => {

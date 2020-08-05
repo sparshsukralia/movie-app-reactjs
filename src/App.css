@@ -6,7 +6,7 @@
 
 body {
   font-family: "montserrat", sans-serif;
-  background: linear-gradient(to right, #200122, #6f0000);
+  background: linear-gradient(to right, #000428, #004e92);
 }
 
 header {
@@ -74,6 +74,8 @@ main {
   color: #fff;
   font-size: 20px;
   font-weight: 600;
+  width: 100%;
+  text-align: center;
   padding: 1rem;
   background: #272829;
   flex: 1 100%;
